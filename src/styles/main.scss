@@ -1,0 +1,622 @@
+@import url(fonts.css);
+@import 'base/base';
+.mainBox{
+    background-image: url(../images/bg.png);
+    width: 100%;
+    height: 669px;
+    background-size: 100% 100%;
+    padding-top: 80px;
+}
+.menu{
+    width: 77%;
+    height: 29px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    &__Logo{
+        font-family: 'LibreFranklin'; 
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+    &Nav{
+        width: 47.7%;
+        display: flex;
+        justify-content: space-between;
+        &__link{
+            font-family: 'LibreFranklin'; 
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+}
+.headInfo{
+    margin: 160px auto;
+    font-family: 'LibreFranklin';
+    color: #FFFFFF;
+    width: 77%;
+    &__text1{
+        font-size: 64px;
+        font-weight: 400;
+    }
+    &__text2{
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 26px;
+    }
+    &__text3{
+        margin-top: 106px;
+        text-decoration: underline;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+.about{
+    width: 100%;
+    height: 547px;
+    font-family: 'LibreFranklin';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__Header{
+        width: 77%;
+        margin-bottom: 78px;
+        margin-top: 104px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &__text{
+        width: 77%;
+        text-align: justify;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 28px;
+    }
+}
+.skills{ 
+    height: 683px;
+    background-color: #FFFAF2;
+    font-family: 'LibreFranklin';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__Header{
+        font-size: 24px;
+        font-weight: 600;
+        width: 77%;
+        margin-top: 95px;
+    }
+    &Profile{
+        display: flex;
+        justify-content: space-between;
+        width: 77%;
+        margin-top: 87px;
+        flex-wrap: wrap;
+        &__Image{
+            width: 350px;
+            height: 340px;
+        }
+        &__Table{
+            height: 340px;
+            width: 57%;
+        }
+        &__FirstCol{
+            width: 29%;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &__RowEmty{
+            height: 64px;
+        }
+        &__Row{
+            height: 45px;
+        }
+        &__SecondCol{
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &Progressbar{
+            width: 446px;
+            height: 24px;
+            background-color: #F5D6AB;
+            &Skill0{
+                height: 24px;
+                background-color: #C66C49;
+                width: 381px;
+            }
+            &Skill1{
+                @extend .skillsProfileProgressbarSkill0;
+                width: 351px;
+            }
+            &Skill2{
+                @extend .skillsProfileProgressbarSkill0;
+                width: 286px;
+            }
+        }
+    }
+}
+.portfolio{
+    width: 100%;
+    height: 817px;
+    font-family: 'LibreFranklin';
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    &__Header{
+        font-size: 24px;
+        font-weight: 600;
+        width: 77%;
+        margin-top: 97px;
+    }
+    &Slider{
+        width: 77%;
+        height: 469px;
+        margin-top: 75px;
+        &__Header{
+            width: 100%;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 52px;
+        }
+        &Box{
+            width: 100%;
+            height: 403px;
+            display: flex;
+            margin-top: 33px;
+            justify-content: space-between;
+            &Text{
+                height: 100%;
+                width: 349px;
+                &__Text{
+                    font-size: 18px;
+                    line-height: 30px;
+                    text-align: justify;  
+                }
+            }
+            &Image{
+                width: 635px;
+                height: 100%;
+                display: flex;
+                margin-top: -7px;
+                &Left{
+                   width: 350px;
+                   padding-left: 7px;
+                   &__Image1{
+                    width: 350px;
+                    height: 144px;
+                    margin-bottom: 23px;
+                   }
+                   &__Image2{
+                    width: 349px;
+                    height: 233px;
+                   }
+                }
+                &Right{
+                  width: 255px;
+                  margin-left: 25px;
+                  &__Image1{
+                    width: 255px;
+                    height: 233px;
+                    margin-bottom: 23px;
+                   }
+                   &__Image2{
+                    width: 255px;
+                    height: 144px;
+                   }
+                }
+            }
+        }
+    }
+    &Box{
+        margin-top: -14px;
+        width: 77%;
+        padding-left: 34px;
+        &__Button{
+            @extend .contactBoxEdit1__Button;
+        }
+        &__ButtonImage{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+.contact{
+    width: 100%;
+    height: 528px;
+    font-family: 'LibreFranklin';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFAF2;
+    &__Header{
+        font-size: 24px;
+        font-weight: 600;
+        width: 77%;
+        margin-top: 93px;
+    }
+    &Box{
+        width: 77%;
+        height: 285px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 53px;
+        &__text{
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 14px;
+        }
+        &Edit{
+            padding-left: 187px;
+        }
+        &Edit1{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            &__Button{
+                border: none;
+                background-color: unset;
+            }
+        }  
+    }
+}
+.telephone{
+    font-size: 15px;
+}
+.burger{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    visibility: hidden;
+    width: 80%;
+    margin-left: 7.1%;
+    &Menu{
+        width: 100px;
+        height: 200px;
+        display: none;
+        background-color: #F5D6AB;
+        border: black 1px solid;
+        box-shadow: 1px 1px 2px black;
+        position: absolute;
+        &__link{
+            @extend .menuNav__link;
+            display: block;
+            width: 100px;
+            margin-bottom: 20px;
+            margin-left: 16px;
+            margin-top: 6px;
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+    &:hover>.burgerMenu{
+        display: block;
+    }
+    &Logo{
+        display: flex;
+    }
+    &__image{
+        width: 24px;
+        height: 24px;
+    }
+}
+.mobileLogo{
+    visibility: hidden;
+    font-family: 'LibreFranklin';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+    margin: auto;
+}
+@media screen and (max-width: 1153px){
+    .about__Header{
+        width: 20%;
+    }
+    .skills{ 
+        height: 100%;
+        &__Header{
+            width: 20%;
+        }
+        &Profile{
+            justify-content: center;
+            &__Table{
+                width: 77%;
+                margin-top: 8%;
+            }
+        }
+    }
+    .portfolio{
+        height: 100%;
+        &__Header{
+            width: 20%;
+        }
+        &Slider{
+            height: 100%;
+            &__Header{
+                width: 26%;
+                margin: 0px auto 0px;
+            }
+            &Box{
+                width: 100%;
+                height: 100%;
+                flex-wrap: wrap;
+                &Text{
+                    height: 100%;
+                    width: 100%;
+                }
+                &Image{
+                    width: 100%;
+                    justify-content: space-around;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        &Box{
+            margin-bottom: 15px;
+        }
+    }
+
+}
+@media screen and (max-width: 886px){
+    .contact{
+        height: 100%;
+        &Box{
+            height: 100%;
+            &Edit{
+                padding-left: 0px;
+            }
+        }
+    }
+    .burger{
+        visibility: visible;
+    }
+    .mobileLogo{
+        visibility: visible;
+    }
+    .menu{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+    .mobileLogo{
+        font-size: 56px;
+        margin: 10% auto;
+    }
+    .mainBox{
+        height: 100%;
+    }
+}
+@media screen and (max-width: 657px){
+    .headInfo{
+        width: 77%;
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+        &__text1{
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: normal;
+            margin-left: 6px;
+            margin-top: 12px;
+        }
+        &__text2{
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 16px;
+            margin-left: 13px;
+            margin-top: 13px;
+        }
+        &__text3{
+            margin-top: 38px;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 16px;
+            margin-bottom: 47px;
+        }
+    }
+    .about{
+        height: 100%;
+        &__Header{
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 23px;
+            margin-bottom: 18px;
+        }
+        &__text{
+            width: 84%;
+            font-size: 12px;
+            line-height: 15px;
+            margin-bottom: 15px;
+            margin-left: 7px;
+        }
+    }
+    .skills{ 
+        margin-top: -6px;
+        &__Header{
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 23px;
+            margin-bottom: 18px;
+            margin-left: 14px;
+        }
+        &Profile{
+            margin-top: 7px;
+            width: 308px;
+            &__Image{
+                width: 215px;
+                height: 209px;
+                margin-left: -5px;
+            }
+            &__Table{
+                width: 308px;
+                margin-left: 8px;
+                margin-top: 25px;
+                height: 269px;
+                
+            }
+            &__FirstCol{
+                width: 98px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 25px;
+            }
+            &__RowEmty{
+                height: 24px;
+            }
+            &__MobileTR{
+                height: 24px;
+            }
+            &__Row{
+                height: 37px;
+            }
+            &__SecondCol{
+                font-size: 12px;
+                line-height: 25px;
+                width: 211px;
+            }
+            &Progressbar{
+                width: 211px;
+                height: 18px;
+                margin-top: 8px;
+                &Skill0{
+                    height: 18px;
+                    width: 135px;
+                }
+                &Skill1{
+                    width: 165px;
+                    height: 18px;
+                }
+                &Skill2{
+                    width: 179px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+    .portfolio{
+        &__Header{
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 36px;
+            margin-left: -24px;
+        }
+        &Slider{
+            height: 100%;
+            margin-top: 0px;
+            &__Header{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 25px;
+                width: 100%;
+                margin: 15px 34% 0px 0px;
+            }
+            &Box{
+                height: 100%;
+                margin-top: 15px;
+                width: 308px;
+                &Text{
+                    width: 100%;
+                    &__Text{
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-align: center; 
+                        margin-left: -14px;
+                        padding-right: 7px;
+                    }
+                }
+                &Image{
+                    width: 100%;
+                    margin-top: 25px;
+                    justify-content: space-between;
+                    &Left{
+                       width: 60%;
+                       padding-left: 0px;
+                       margin-left: -8px;
+                       &__Image1{
+                        width: 163px;
+                        height: 67px;
+                        margin-bottom: 12px;
+                       }
+                       &__Image2{
+                        width: 162px;
+                        height: 109px;
+                       }
+                    }
+                    &Right{
+                      width: 47%;
+                      margin-left: -3px;
+                      &__Image1{
+                        width: 118px;
+                        height: 109px;
+                        margin-bottom: 11px;
+                       }
+                       &__Image2{
+                        width: 118px;
+                        height: 68px;
+                       }
+                    }
+                }
+            }
+        }
+        &Box{
+            display: none;
+        }
+    }
+    .contact{
+        height: 100%;
+        &__Header{
+            width: 39%;
+            margin-top: 23px;
+            margin-left: 8px;
+        }
+        &Box{
+            height: 100%;
+            margin-top: 26px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            &__text{
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 18px;
+            }
+            &Edit{
+                padding-left: 0px;
+                margin-left: 91px;
+            }
+            &Edit1{
+                margin-left: 31%;
+            }  
+        }
+    }
+    .telephone{
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 0px;
+        margin-top: -11px;
+    }
+    .mobileLogo{
+        font-size: 24px;
+        line-height: 29px;
+        margin-left: 23%;
+        margin-top: -6px;
+    }
+    .burger{
+        top: 39px;
+        left: 34px;
+        margin: 0px;
+    }
+    .mobileContact{
+        margin-left: -1px;
+        margin-top: 10px;
+    }
+}

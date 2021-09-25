@@ -1,0 +1,74 @@
+extends common/layout
+
+block content
+   main
+     section.about
+       h2.about__Header About
+       p.about__text
+         | Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam
+         | penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus
+         | sed.
+         | Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet
+         | mollis.
+       p.about__text
+         | Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in
+         | rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing
+         | elit.
+         | Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus
+         | aliquet
+         | tellus, in rutrum augue. Pellentesque.
+     section.skills
+       h2.skills__Header Skills
+       .skillsProfile
+         img.skillsProfile__Image(src='images/Profile Picture.png', alt='')
+         table.skillsProfile__Table
+           tr.skillsProfile__MobileTR
+             td.skillsProfile__FirstCol Profile
+             td.skillsProfile__SecondCol UI / UX Engineer, Front-end Developer
+           tr.skillsProfile__RowEmty
+           tr.skillsProfile__Row
+             td.skillsProfile__FirstCol UX Research
+             td
+               .skillsProfileProgressbar
+                 .skillsProfileProgressbarSkill0
+           tr.skillsProfile__Row
+             td.skillsProfile__FirstCol Tools
+             td.skillsProfile__SecondCol Paper, Pen, Balsamiq
+           tr.skillsProfile__Row
+             td.skillsProfile__FirstCol UI Design
+             td
+               .skillsProfileProgressbar
+                 .skillsProfileProgressbarSkill1
+           tr.skillsProfile__Row
+             td.skillsProfile__FirstCol Tools
+             td.skillsProfile__SecondCol Adobe PS, AI, XD, Figma, InVision
+           tr.skillsProfile__Row
+             td.skillsProfile__FirstCol Front-end Dev
+             td
+               .skillsProfileProgressbar
+                 .skillsProfileProgressbarSkill2
+           tr.skillsProfile__Row
+             td.skillsProfile__FirstCol Tools
+             td.skillsProfile__SecondCol HTML, CSS, JS, Bootstrap, React
+     section.portfolio
+       h2.portfolio__Header Portfolio
+       .portfolioSlider
+         h2.portfolioSlider__Header UX Research
+         .portfolioSliderBox
+           .portfolioSliderBoxText
+             p.portfolioSliderBoxText__Text
+               | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               | Ac dictum nibh
+               | nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.
+           .portfolioSliderBoxImage
+             .portfolioSliderBoxImageLeft
+               img.portfolioSliderBoxImageLeft__Image1(src='images/2.png', alt='')
+               img.portfolioSliderBoxImageLeft__Image2(src='images/1.png', alt='')
+             .portfolioSliderBoxImageRight
+               img.portfolioSliderBoxImageRight__Image1(src='images/3.png', alt='')
+               img.portfolioSliderBoxImageRight__Image2(src='images/4.png', alt='')
+       .portfolioBox
+         button.portfolioBox__Button
+           img.portfolioBox__ButtonImage(src='./images/arrowLeft.png', alt='')
+         button.portfolioBox__Button
+           img.portfolioBox__ButtonImage(src='./images/arrowRight.png', alt='')
